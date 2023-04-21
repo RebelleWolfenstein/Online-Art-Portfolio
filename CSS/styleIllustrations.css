@@ -53,7 +53,7 @@ div.gallery .box .section .piece {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 400px;
+  width: 450px;
 }
 
 div.gallery .piece:hover {
@@ -61,7 +61,7 @@ div.gallery .piece:hover {
 }
 
 .gallery .box .section .piece img{
-	width: 400px;
+	width: 450px;
   	height: auto;
 }
 
