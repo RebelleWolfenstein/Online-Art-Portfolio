@@ -124,7 +124,7 @@ to-top{
 	opacity: 1;
 }
 
-@media only screen and (max-width: 769px){
+@media only screen and (max-device-width: 480px){
 	.gallery .box{
 		flex-direction: column;
 	}
