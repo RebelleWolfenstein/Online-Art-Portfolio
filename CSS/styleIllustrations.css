@@ -44,25 +44,26 @@ body h2{
 	align-items: center;
 }
 
-.gallery .box .section img{
-	width: 80%;
-	border-radius: 5px;
-}
-
-div.gallery .box .section .piece {
+.gallery .box .section .piece {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
   width: 450px;
 }
 
-div.gallery .piece:hover {
+.gallery .box .section .piece:hover {
   border: 1px solid #777;
 }
 
 .gallery .box .section .piece img{
 	width: 450px;
   	height: auto;
+  	object-fit: cover;
+  	transition: 0.2s linear;
+}
+
+.gallery .box .section .piece:hover img{
+	transform: scale(1.05);
 }
 
 div.desc {
@@ -125,12 +126,46 @@ to-top{
 }
 
 @media only screen and (max-device-width: 520px){
+	h1 {
+		text-align: center;
+		font-size: 100px;
+	}
+	body h2{
+		font-weight: bolder;
+		font-size: 70px;
+		border-bottom: 3px solid #222;
+	}
+	.social-icon{
+		font-size: 80px;
+	}
+	.btn{
+		width: 50%;
+		font-size: 2rem;
+	}
 	.gallery .box{
 		flex-direction: column;
+		width: 150%;
 	}
 	.gallery .box .section{
 		display: flex;
 		flex-direction: column;
-		width: 200%;
+		width: 300%;
+	}
+	.gallery .box .section .piece {
+  		margin: 5px;
+  		border: 1px solid #ccc;
+  		float: left;
+  		width: 1300px;
+	}
+	.gallery .box .section .piece img{
+		width: 1300px;
+  		height: auto;
+  		object-fit: cover;
+  		transition: 0.2s linear;
+	}
+	div.desc {
+  		padding: 15px;
+  		text-align: center;
+  		font-size: 80px;
 	}
 }
